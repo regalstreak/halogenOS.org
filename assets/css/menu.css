@@ -195,7 +195,7 @@ Menu
 }
 
     .navbar-default {
-        background-color: #5c5edc;
+        background-color: #4696e5;
     }
         .navbar-default .navbar-brand {
             color: white; }
@@ -261,7 +261,7 @@ Menu
   }
   .navbar-default.navbar-shrink {
     padding: 10px 0;
-    background-color: #5c5edc;
+    background-color: #4696e5;
   }
   .navbar-default.navbar-shrink .navbar-brand {
     font-size: 1.5em;

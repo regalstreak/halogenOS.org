@@ -132,9 +132,7 @@ Menu
         margin-top: 13px;
         margin-bottom: 13px;
         background-color: transparent;
-        background-image: none;
-        border: 1px solid transparent;
-        border-radius: 4px; }
+        background-image: none;}
     .navbar-toggle:focus {
         outline: 0; }
     .navbar-toggle .icon-bar {

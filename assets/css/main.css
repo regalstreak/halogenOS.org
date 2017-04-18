@@ -2090,7 +2090,7 @@
 		.select-wrapper:before {
 			-moz-osx-font-smoothing: grayscale;
 			-webkit-font-smoothing: antialiased;
-			font-family: FontAwesome;
+			font-family: 'Roboto', FontAwesome, 'Helvetica Neue', Arial, sans-serif;
 			font-style: normal;
 			font-weight: normal;
 			text-transform: none !important;
@@ -2154,7 +2154,7 @@
 			input[type="radio"] + label:before {
 				-moz-osx-font-smoothing: grayscale;
 				-webkit-font-smoothing: antialiased;
-				font-family: FontAwesome;
+				font-family: 'Roboto', FontAwesome, 'Helvetica Neue', Arial, sans-serif;
 				font-style: normal;
 				font-weight: normal;
 				text-transform: none !important;
@@ -2291,7 +2291,7 @@
 		.icon:before {
 			-moz-osx-font-smoothing: grayscale;
 			-webkit-font-smoothing: antialiased;
-			font-family: FontAwesome;
+			font-family: 'Roboto', FontAwesome, 'Helvetica Neue', Arial, sans-serif;
 			font-style: normal;
 			font-weight: normal;
 			text-transform: none !important;
@@ -4217,4 +4217,16 @@ ul.actions li {
 ul.actions li > * {
   width: 100%;
 }
+}
+
+.bigtitle {
+	font-family: 'Roboto', 'Open Sans', 'Helvetica Neue', Helvetica, Verdana, sans-serif !important;
+	font-size: 4em !important;
+	font-weight: 100 !important;
+}
+
+.middesctext {
+	font-family: 'Slabo', 'Source Code Pro', monospace !important;
+	font-size: 27px !important;
+	font-weight: 400 !important;
 }

@@ -4165,7 +4165,7 @@
   overflow: hidden;
   text-indent: 100%;
   white-space: nowrap;
-  background: rgba(0, 180, 231, 0.8) url(../images/top.png) no-repeat center 50%;
+  background: rgba(0, 180, 231, 0.8) url(../../images/top.png) no-repeat center 50%;
   visibility: hidden;
   opacity: 0;
   -webkit-transition: opacity .3s 0s, visibility 0s .3s;

@@ -4226,7 +4226,11 @@ ul.actions li > * {
 }
 
 .middesctext {
-	font-family: 'Slabo', 'Source Code Pro', monospace !important;
-	font-size: 27px !important;
+	font-family: 'Patua One', 'Source Code Pro', monospace !important;
+	font-size: 32px !important;
 	font-weight: 400 !important;
+}
+
+#gerrit-icon {
+	display: none;
 }

@@ -15,7 +15,24 @@
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
 		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
 		<link href="https://fonts.googleapis.com/css?family=Roboto:100,400" rel="stylesheet">
-		<link href="https://fonts.googleapis.com/css?family=Slabo+27px" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Patua+One" rel="stylesheet">
+		
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="assets/js/main.js"></script>
+			<!-- Menu -->
+			<script src="assets/js/menu/agency.js"></script>
+			<script src="assets/js/menu/bootstrap.min.js"></script>
+			<script src="assets/js/menu/cbpAnimatedHeader.js"></script>
+			<script src="assets/js/menu/classie.js"></script>
+			<script src="assets/js/menu/jquery.easing.min.js"></script>
+		    <!-- ToTop -->
+		    <script src="assets/js/totop/main.js"></script>
+		    <script src="assets/js/totop/modernizr.js"></script>
 	</head>
 	<body id="top">
 		
@@ -63,10 +80,22 @@
 						All crafted into one amazing package.</h2>
 				</header>
 				<ul class="icons major">
-					<li><span class="icon fa-camera-retro"><span class="label">Shoot</span></span></li>
-					<li><span class="icon fa-refresh"><span class="label">Process</span></span></li>
-					<li><span class="icon fa-cloud"><span class="label">Upload</span></span></li>
+					<li><a id="gerrit-icon" href="https://jenkins.xdevs23.me/" style="text-decoration: none !important;"><span class="icon fa-gear"><span class="label">Jenkins</span></span></a></li>
+					<li><a href="https://review.halogenos.org/" style="text-decoration: none !important;"><span class="icon fa-git"><span class="label">Gerrit</span></span></a></li>
 				</ul>
+				<script type="text/javascript">
+				$.ajax({url: "https://jenkins.xdevs23.me/",
+			        type: "HEAD",
+			        timeout: 2000,
+			        success: function () {
+			                $("#gerrit-icon").css("display", "block");
+			            },
+			        error: function () {
+			            	console.log("Cannot reach jenkins server");
+			            }
+			        }
+				 );
+				 </script>
 			</section>
 
 		<!-- Two -->
@@ -102,15 +131,13 @@
 					<h2>Ready to rock!</h2>
 					<p>What are you waiting for? We believe that you'll love it!</p>
 				</header>
+	            <form id="paypal-donate-action" action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+	             			<input type="hidden" name="cmd" value="_s-xclick"/>
+	             		    <input type="hidden" name="hosted_button_id" value="66H2YUU3LCPPY"/>
+	            </form>
 				<ul class="actions">
 					<li><a href="http://halogenos.org/upload/ROM/halogenOS/7/" target="_blank" class="button special icon fa-download">Download</a></li>
-					<li><a class="button">
-			            <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-             			<input type="hidden" name="cmd" value="_s-xclick"/>
-             		    <input type="hidden" name="hosted_button_id" value="66H2YUU3LCPPY"/>
-                		<button class="paypalbutton icon fa-paypal" type="submit" target="_blank">Donate</button>
-            			</form></a>
-					</li>
+					<li><a class="button icon fa-paypal" onclick="javascript:$('#paypal-donate-action').submit();">Donate</a></li>
 				</ul>
 			</section>
 
@@ -446,22 +473,6 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 				<a href="#" class="cd-top">Top</a>
 			</footer>
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/skel.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
-			<script src="assets/js/main.js"></script>
-			<!-- Menu -->
-			<script src="assets/js/menu/agency.js"></script>
-			<script src="assets/js/menu/bootstrap.min.js"></script>
-			<script src="assets/js/menu/cbpAnimatedHeader.js"></script>
-			<script src="assets/js/menu/classie.js"></script>
-			<script src="assets/js/menu/jquery.easing.min.js"></script>
-		    <!-- ToTop -->
-		    <script src="assets/js/totop/main.js"></script>
-		    <script src="assets/js/totop/modernizr.js"></script>
 
 	</body>
 </html>
